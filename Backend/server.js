@@ -510,6 +510,20 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Camiones Backend API',
+    version: '1.0.0',
+    description: 'Farmers & Drivers job matching platform backend',
+    endpoints: {
+      auth: '/auth/*',
+      jobs: '/jobs',
+      health: '/health',
+    },
+  });
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Backend running on http://localhost:${PORT}`);
