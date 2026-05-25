@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Camiones",
+    "slug": "camiones-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "camionesapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTabletMode": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4CAF50"
+      },
+      "package": "com.camiones.app"
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "sdkVersion": "54.0.0"
+  }
+}
